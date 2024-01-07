@@ -13,5 +13,11 @@ class CfgPatches {
         VERSION_CONFIG;
     };
 };
+class CfgAmmo {
+    class GrenadeBase; // Reference the base class
 
+    class G_40mm_HE: GrenadeBase {
+        cartridge = "FxCartridge_40mm";
+    };
+};
 #include "CfgEventHandlers.hpp"
